@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:text="Select Your Condition"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/donthave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Don't Have Ticket"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/haveavailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Have General Ticket and Seat is Available"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/havenotavailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Have General Ticket and Seat is Not Available"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text=""
+        android:textSize="18sp"
+        tools:textColor="@android:color/background_dark" />
+</LinearLayout>
